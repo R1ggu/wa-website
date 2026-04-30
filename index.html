@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hardware Atlas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="global.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <p class="eyebrow">Interactive Hardware Guide</p>
+        <h1>Explore the parts that make a modern computer work.</h1>
+        <p class="hero-copy">
+          Click any component to see what it does, why it matters, and what to
+          look for when choosing one.
+        </p>
+        <div class="hero-stats" aria-label="Quick hardware facts">
+          <div class="stat">
+            <span class="stat-value">7</span>
+            <span class="stat-label">Core parts</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Pictures used</span>
+          </div>
+          <div class="stat">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Static website</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="catalog" aria-labelledby="catalog-title">
+          <div class="section-head">
+            <p class="section-kicker">Component List</p>
+            <h2 id="catalog-title">Choose a part</h2>
+          </div>
+
+          <div class="component-grid">
+            <button class="component-card active" data-component="cpu" type="button">
+              <span class="component-code">01</span>
+              <strong>CPU</strong>
+              <span class="component-role">Central Processing Unit</span>
+            </button>
+
+            <button class="component-card" data-component="gpu" type="button">
+              <span class="component-code">02</span>
+              <strong>GPU</strong>
+              <span class="component-role">Graphics Processing Unit</span>
+            </button>
+
+            <button class="component-card" data-component="ram" type="button">
+              <span class="component-code">03</span>
+              <strong>RAM</strong>
+              <span class="component-role">Short-term working memory</span>
+            </button>
+
+            <button class="component-card" data-component="storage" type="button">
+              <span class="component-code">04</span>
+              <strong>Storage</strong>
+              <span class="component-role">SSD and long-term data</span>
+            </button>
+
+            <button class="component-card" data-component="motherboard" type="button">
+              <span class="component-code">05</span>
+              <strong>Motherboard</strong>
+              <span class="component-role">The main connection platform</span>
+            </button>
+
+            <button class="component-card" data-component="psu" type="button">
+              <span class="component-code">06</span>
+              <strong>PSU</strong>
+              <span class="component-role">Power Supply Unit</span>
+            </button>
+
+            <button class="component-card" data-component="cooling" type="button">
+              <span class="component-code">07</span>
+              <strong>Cooling</strong>
+              <span class="component-role">Thermal control system</span>
+            </button>
+          </div>
+        </section>
+
+        <aside class="detail-panel" aria-live="polite">
+          <div class="panel-topline">
+            <span id="component-tag">Processing Core</span>
+            <span id="component-index">01</span>
+          </div>
+
+          <h2 id="component-name">CPU</h2>
+          <p id="component-summary" class="detail-summary">
+            The CPU handles general-purpose calculations, logic, and system
+            coordination across almost every program on the machine.
+          </p>
+
+          <div class="detail-block">
+            <h3>Main Job</h3>
+            <p id="component-purpose">
+              It executes instructions, manages application tasks, and keeps the
+              operating system responsive during work, browsing, and gaming.
+            </p>
+          </div>
+
+          <div class="detail-block">
+            <h3>What To Check</h3>
+            <ul id="component-specs" class="detail-list">
+              <li>Core count for multitasking</li>
+              <li>Clock speed for fast single-threaded work</li>
+              <li>Socket compatibility with the motherboard</li>
+            </ul>
+          </div>
+
+          <div class="detail-block">
+            <h3>Best For</h3>
+            <p id="component-usage">
+              A strong CPU matters most for programming, office work, simulation,
+              compiling code, and games that depend heavily on game logic.
+            </p>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
