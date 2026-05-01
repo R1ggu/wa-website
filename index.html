@@ -13,121 +13,336 @@
     <link rel="stylesheet" href="global.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="hero">
-        <p class="eyebrow">Interactive Hardware Guide</p>
-        <h1>Explore the parts that make a modern computer work.</h1>
-        <p class="hero-copy">
-          Click any component to see what it does, why it matters, and what to
-          look for when choosing one.
-        </p>
-        <div class="hero-stats" aria-label="Quick hardware facts">
-          <div class="stat">
-            <span class="stat-value">7</span>
-            <span class="stat-label">Core parts</span>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Hardware Atlas home">
+        <span class="brand-mark">HA</span>
+        <span>Hardware Atlas</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#components">Components</a>
+        <a href="#workflow">Build Flow</a>
+        <a href="#checklist">Checklist</a>
+        <a href="#impressum">Impressum</a>
+      </nav>
+    </header>
+
+    <div id="top" class="page-shell">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Interactive Hardware Guide</p>
+          <h1>Explore the parts that make a modern computer work.</h1>
+          <p class="hero-copy">
+            Hardware Atlas is a static learning page for understanding PC parts,
+            compatibility, performance tradeoffs, and the practical decisions
+            behind a balanced computer build.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#components">Explore parts</a>
+            <a class="button secondary" href="#checklist">Plan a build</a>
           </div>
-          <div class="stat">
-            <span class="stat-value">0</span>
-            <span class="stat-label">Pictures used</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value">100%</span>
-            <span class="stat-label">Static website</span>
+          <div class="hero-stats" aria-label="Quick hardware facts">
+            <div class="stat">
+              <span class="stat-value">7</span>
+              <span class="stat-label">Core parts</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">4</span>
+              <span class="stat-label">Guide sections</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Static website</span>
+            </div>
           </div>
         </div>
-      </header>
 
-      <main class="layout">
-        <section class="catalog" aria-labelledby="catalog-title">
-          <div class="section-head">
-            <p class="section-kicker">Component List</p>
-            <h2 id="catalog-title">Choose a part</h2>
+        <div class="hero-visual" aria-label="Stylized computer hardware schematic">
+          <svg viewBox="0 0 520 430" role="img">
+            <title>Computer hardware schematic</title>
+            <rect class="svg-case" x="68" y="42" width="384" height="326" rx="28" />
+            <rect class="svg-board" x="106" y="80" width="308" height="250" rx="18" />
+            <rect class="svg-chip" x="146" y="114" width="118" height="92" rx="12" />
+            <rect class="svg-chip small" x="292" y="116" width="82" height="34" rx="8" />
+            <rect class="svg-chip small" x="292" y="164" width="82" height="34" rx="8" />
+            <rect class="svg-slot" x="146" y="236" width="230" height="18" rx="9" />
+            <rect class="svg-slot accent" x="146" y="272" width="184" height="18" rx="9" />
+            <circle class="svg-fan" cx="360" cy="268" r="44" />
+            <path class="svg-wire" d="M205 206 C205 226 250 226 250 252" />
+            <path class="svg-wire" d="M264 160 C288 160 288 134 292 134" />
+            <path class="svg-wire" d="M264 177 C288 177 288 181 292 181" />
+            <text x="164" y="167">CPU</text>
+            <text x="312" y="139">RAM</text>
+            <text x="314" y="187">SSD</text>
+          </svg>
+        </div>
+      </section>
+
+      <main>
+        <section class="intro-band" aria-label="What this guide covers">
+          <article>
+            <span class="section-kicker">Why it matters</span>
+            <h2>Good builds are systems, not shopping lists.</h2>
+          </article>
+          <p>
+            A fast PC depends on how parts work together. A powerful graphics
+            card can be limited by weak cooling, a great CPU can be wasted on
+            the wrong motherboard, and storage choices affect how responsive the
+            whole machine feels every day.
+          </p>
+        </section>
+
+        <section id="components" class="layout" aria-label="Interactive component guide">
+          <section class="catalog" aria-labelledby="catalog-title">
+            <div class="section-head">
+              <p class="section-kicker">Component List</p>
+              <h2 id="catalog-title">Choose a part</h2>
+              <p>
+                Select a component to learn its role, the specs worth checking,
+                and where it has the biggest impact.
+              </p>
+            </div>
+
+            <div class="component-grid">
+              <button class="component-card active" data-component="cpu" type="button">
+                <span class="component-code">01</span>
+                <strong>CPU</strong>
+                <span class="component-role">Central Processing Unit</span>
+              </button>
+
+              <button class="component-card" data-component="gpu" type="button">
+                <span class="component-code">02</span>
+                <strong>GPU</strong>
+                <span class="component-role">Graphics Processing Unit</span>
+              </button>
+
+              <button class="component-card" data-component="ram" type="button">
+                <span class="component-code">03</span>
+                <strong>RAM</strong>
+                <span class="component-role">Short-term working memory</span>
+              </button>
+
+              <button class="component-card" data-component="storage" type="button">
+                <span class="component-code">04</span>
+                <strong>Storage</strong>
+                <span class="component-role">SSD and long-term data</span>
+              </button>
+
+              <button class="component-card" data-component="motherboard" type="button">
+                <span class="component-code">05</span>
+                <strong>Motherboard</strong>
+                <span class="component-role">The main connection platform</span>
+              </button>
+
+              <button class="component-card" data-component="psu" type="button">
+                <span class="component-code">06</span>
+                <strong>PSU</strong>
+                <span class="component-role">Power Supply Unit</span>
+              </button>
+
+              <button class="component-card" data-component="cooling" type="button">
+                <span class="component-code">07</span>
+                <strong>Cooling</strong>
+                <span class="component-role">Thermal control system</span>
+              </button>
+            </div>
+          </section>
+
+          <aside class="detail-panel" aria-live="polite">
+            <div class="panel-topline">
+              <span id="component-tag">Processing Core</span>
+              <span id="component-index">01</span>
+            </div>
+
+            <h2 id="component-name">CPU</h2>
+            <p id="component-summary" class="detail-summary">
+              The CPU handles general-purpose calculations, logic, and system
+              coordination across almost every program on the machine.
+            </p>
+
+            <div class="detail-block">
+              <h3>Main Job</h3>
+              <p id="component-purpose">
+                It executes instructions, manages application tasks, and keeps the
+                operating system responsive during work, browsing, and gaming.
+              </p>
+            </div>
+
+            <div class="detail-block">
+              <h3>What To Check</h3>
+              <ul id="component-specs" class="detail-list">
+                <li>Core count for multitasking</li>
+                <li>Clock speed for fast single-threaded work</li>
+                <li>Socket compatibility with the motherboard</li>
+              </ul>
+            </div>
+
+            <div class="detail-block">
+              <h3>Best For</h3>
+              <p id="component-usage">
+                A strong CPU matters most for programming, office work, simulation,
+                compiling code, and games that depend heavily on game logic.
+              </p>
+            </div>
+          </aside>
+        </section>
+
+        <section id="workflow" class="content-section" aria-labelledby="workflow-title">
+          <div class="section-head wide">
+            <p class="section-kicker">Build Flow</p>
+            <h2 id="workflow-title">Plan the system in the right order.</h2>
+            <p>
+              A stable build starts with the workload. Gaming, office work,
+              streaming, video editing, and programming all stress different
+              parts of the machine.
+            </p>
           </div>
 
-          <div class="component-grid">
-            <button class="component-card active" data-component="cpu" type="button">
-              <span class="component-code">01</span>
-              <strong>CPU</strong>
-              <span class="component-role">Central Processing Unit</span>
-            </button>
-
-            <button class="component-card" data-component="gpu" type="button">
-              <span class="component-code">02</span>
-              <strong>GPU</strong>
-              <span class="component-role">Graphics Processing Unit</span>
-            </button>
-
-            <button class="component-card" data-component="ram" type="button">
-              <span class="component-code">03</span>
-              <strong>RAM</strong>
-              <span class="component-role">Short-term working memory</span>
-            </button>
-
-            <button class="component-card" data-component="storage" type="button">
-              <span class="component-code">04</span>
-              <strong>Storage</strong>
-              <span class="component-role">SSD and long-term data</span>
-            </button>
-
-            <button class="component-card" data-component="motherboard" type="button">
-              <span class="component-code">05</span>
-              <strong>Motherboard</strong>
-              <span class="component-role">The main connection platform</span>
-            </button>
-
-            <button class="component-card" data-component="psu" type="button">
-              <span class="component-code">06</span>
-              <strong>PSU</strong>
-              <span class="component-role">Power Supply Unit</span>
-            </button>
-
-            <button class="component-card" data-component="cooling" type="button">
-              <span class="component-code">07</span>
-              <strong>Cooling</strong>
-              <span class="component-role">Thermal control system</span>
-            </button>
+          <div class="steps">
+            <article class="step">
+              <span>01</span>
+              <h3>Define the workload</h3>
+              <p>
+                Decide whether the machine is mostly for games, creative tools,
+                school work, coding, or a mix. This sets the budget priority.
+              </p>
+            </article>
+            <article class="step">
+              <span>02</span>
+              <h3>Choose the platform</h3>
+              <p>
+                Pick a CPU and motherboard socket first. That choice controls
+                memory generation, upgrade room, and available ports.
+              </p>
+            </article>
+            <article class="step">
+              <span>03</span>
+              <h3>Balance performance</h3>
+              <p>
+                Match CPU and GPU strength so one part does not constantly wait
+                for the other during the tasks you care about.
+              </p>
+            </article>
+            <article class="step">
+              <span>04</span>
+              <h3>Protect the basics</h3>
+              <p>
+                Leave enough power headroom, plan airflow, and make sure the
+                case has physical space for the cooler, GPU, and cables.
+              </p>
+            </article>
           </div>
         </section>
 
-        <aside class="detail-panel" aria-live="polite">
-          <div class="panel-topline">
-            <span id="component-tag">Processing Core</span>
-            <span id="component-index">01</span>
-          </div>
-
-          <h2 id="component-name">CPU</h2>
-          <p id="component-summary" class="detail-summary">
-            The CPU handles general-purpose calculations, logic, and system
-            coordination across almost every program on the machine.
-          </p>
-
-          <div class="detail-block">
-            <h3>Main Job</h3>
-            <p id="component-purpose">
-              It executes instructions, manages application tasks, and keeps the
-              operating system responsive during work, browsing, and gaming.
+        <section class="content-section split-section" aria-labelledby="compare-title">
+          <div>
+            <p class="section-kicker">Performance Focus</p>
+            <h2 id="compare-title">Different users need different strengths.</h2>
+            <p>
+              The most expensive component is not always the smartest one. The
+              right upgrade is the part that removes the actual bottleneck from
+              your daily work.
             </p>
           </div>
 
-          <div class="detail-block">
-            <h3>What To Check</h3>
-            <ul id="component-specs" class="detail-list">
-              <li>Core count for multitasking</li>
-              <li>Clock speed for fast single-threaded work</li>
-              <li>Socket compatibility with the motherboard</li>
-            </ul>
+          <div class="comparison-table" role="table" aria-label="Hardware priorities by use case">
+            <div role="row" class="table-row table-head">
+              <span role="columnheader">Use case</span>
+              <span role="columnheader">Priority</span>
+              <span role="columnheader">Watch out for</span>
+            </div>
+            <div role="row" class="table-row">
+              <span role="cell">Gaming</span>
+              <span role="cell">GPU, CPU, cooling</span>
+              <span role="cell">Monitor resolution and power draw</span>
+            </div>
+            <div role="row" class="table-row">
+              <span role="cell">Office and school</span>
+              <span role="cell">CPU, RAM, SSD</span>
+              <span role="cell">Noise, reliability, enough ports</span>
+            </div>
+            <div role="row" class="table-row">
+              <span role="cell">Video editing</span>
+              <span role="cell">CPU, GPU, storage</span>
+              <span role="cell">Large files and memory capacity</span>
+            </div>
+            <div role="row" class="table-row">
+              <span role="cell">Programming</span>
+              <span role="cell">CPU, RAM, SSD</span>
+              <span role="cell">Compile times and virtual machines</span>
+            </div>
           </div>
+        </section>
 
-          <div class="detail-block">
-            <h3>Best For</h3>
-            <p id="component-usage">
-              A strong CPU matters most for programming, office work, simulation,
-              compiling code, and games that depend heavily on game logic.
+        <section id="checklist" class="content-section" aria-labelledby="checklist-title">
+          <div class="section-head wide">
+            <p class="section-kicker">Compatibility Checklist</p>
+            <h2 id="checklist-title">Before you buy, verify the connections.</h2>
+            <p>
+              These checks prevent the most common build problems. They are
+              simple, but skipping one can turn an exciting upgrade into a long
+              troubleshooting evening.
             </p>
           </div>
-        </aside>
+
+          <div class="checklist-grid">
+            <article>
+              <h3>CPU and board</h3>
+              <p>
+                Confirm the CPU socket, chipset support, BIOS version, and
+                whether the motherboard can handle the processor's power limits.
+              </p>
+            </article>
+            <article>
+              <h3>Memory support</h3>
+              <p>
+                Match DDR generation, speed support, module height, slot count,
+                and the total capacity needed for current and future workloads.
+              </p>
+            </article>
+            <article>
+              <h3>Case clearance</h3>
+              <p>
+                Check GPU length, CPU cooler height, radiator space, drive bays,
+                and cable routing before deciding on a compact enclosure.
+              </p>
+            </article>
+            <article>
+              <h3>Power and cables</h3>
+              <p>
+                Estimate wattage under load, leave headroom, and verify every
+                GPU, CPU, storage, and fan connector is available.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section id="impressum" class="impressum" aria-labelledby="impressum-title">
+          <div>
+            <p class="section-kicker">Legal</p>
+            <h2 id="impressum-title">Impressum</h2>
+            <p>
+              This static demo website is a learning project and contains
+              placeholder legal information. Replace the details below with the
+              real responsible person or company before publishing.
+            </p>
+          </div>
+
+          <address>
+            <strong>Hardware Atlas Demo</strong><br />
+            Responsible person: Max Mustermann<br />
+            Musterstrasse 12<br />
+            8000 Zurich, Switzerland<br />
+            Email: hello@example.com<br />
+            Phone: +41 00 000 00 00
+          </address>
+        </section>
       </main>
     </div>
+
+    <footer class="site-footer">
+      <span>Hardware Atlas</span>
+      <span>Static HTML, CSS, and JavaScript project.</span>
+    </footer>
 
     <script src="index.js"></script>
   </body>
