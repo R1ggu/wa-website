@@ -1,4 +1,4 @@
-import { Hero } from "../components/Hero.js";
+﻿import { Hero } from "../components/Hero.js";
 import { PartCard } from "../components/PartCard.js";
 import { SectionHeader } from "../components/SectionHeader.js";
 
@@ -13,19 +13,19 @@ export function renderHomePage(parts) {
     <section class="intro-band">
       <div>
         <p class="section-kicker">Warum es wichtig ist</p>
-        <h2>Ein Computer ist ein System, keine zufaellige Einkaufsliste.</h2>
+        <h2>Ein Computer ist ein System, keine zufällige Einkaufsliste.</h2>
       </div>
       <p>
         Das schnellste Teil kann verschwendetes Geld sein, wenn der Rest des
-        Systems es nicht kuehlen, versorgen oder richtig verbinden kann. Diese
-        Website zerlegt den PC in klare Themen und praktische Checks.
+        Systems es nicht kühlen, versorgen oder richtig verbinden kann. HardwareWissen
+        zerlegt den PC in klare Themen und praktische Checks.
       </p>
     </section>
     <section class="content-section">
       ${SectionHeader({
         kicker: "Wichtige Komponenten",
-        title: "Starte mit den Teilen, die Leistung und Kompatibilitaet praegen.",
-        copy: "Jede Karte fuehrt zu einer eigenen Detailseite mit Specs, typischen Fehlern und Unterkategorien.",
+        title: "Starte mit den Teilen, die Leistung und Kompatibilität prägen.",
+        copy: "Jede Karte führt zu einer eigenen Detailseite mit Specs, typischen Fehlern und Unterkategorien.",
       })}
       <div class="part-grid">${cards}</div>
       <a class="button inline-button" href="components.html">Alle Themen ansehen</a>
@@ -47,3 +47,6 @@ export function renderHomePage(parts) {
     </section>
   `;
 }
+
+
+

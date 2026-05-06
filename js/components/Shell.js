@@ -1,4 +1,4 @@
-import { Header } from "./Header.js";
+﻿import { Header } from "./Header.js";
 import { Footer } from "./Footer.js";
 
 export function renderShell({ page, content }) {
@@ -8,3 +8,6 @@ export function renderShell({ page, content }) {
     ${Footer()}
   `;
 }
+
+
+

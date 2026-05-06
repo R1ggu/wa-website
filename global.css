@@ -85,17 +85,13 @@ img {
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 42px;
-  place-items: center;
+.brand-logo {
+  width: 46px;
+  height: 46px;
   border: 1px solid var(--line-strong);
   border-radius: var(--radius);
-  background: var(--accent);
-  color: var(--ink);
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.84rem;
+  background: #f7f9fb;
+  object-fit: contain;
 }
 
 .site-nav {
@@ -585,6 +581,210 @@ dd {
   font-size: 0.78rem;
 }
 
+.level-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.level-button {
+  min-height: 96px;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.045);
+  color: var(--text);
+  text-align: left;
+  cursor: pointer;
+}
+
+.level-button strong,
+.level-button span {
+  display: block;
+}
+
+.level-button strong {
+  font-size: 1.05rem;
+}
+
+.level-button span {
+  margin-top: 0.35rem;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.level-button.active,
+.level-button:hover,
+.level-button:focus-visible {
+  border-color: var(--line-strong);
+  background: rgba(125, 210, 178, 0.12);
+  outline: none;
+}
+
+.build-level-panel {
+  display: grid;
+  gap: 1rem;
+}
+
+.guide-step-list,
+.compat-grid,
+.spec-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.guide-step-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.guide-step,
+.compat-card,
+.spec-grid article,
+.mistake-panel,
+.tool-list,
+.compat-workflow,
+.category-strip {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.guide-step {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.guide-step > span,
+.compat-workflow span {
+  color: var(--accent-2);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.guide-step h3,
+.compat-card h3,
+.spec-grid h3,
+.mistake-panel h3 {
+  margin: 0 0 0.55rem;
+}
+
+.guide-step p,
+.compat-card p,
+.spec-grid p {
+  margin: 0 0 0.75rem;
+}
+
+.guide-step ul,
+.compat-card ul,
+.mistake-panel ul,
+.tool-list,
+.compat-workflow {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.mistake-panel {
+  padding: 1rem;
+  border-color: rgba(255, 125, 116, 0.38);
+  background: rgba(58, 29, 30, 0.45);
+}
+
+.tool-list,
+.compat-workflow {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.compat-workflow {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.compat-workflow li {
+  display: grid;
+  grid-template-columns: 42px 1fr;
+  gap: 0.75rem;
+}
+
+.compat-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.compat-card,
+.spec-grid article {
+  padding: 1rem;
+}
+
+.compat-card > span {
+  display: inline-block;
+  margin-bottom: 0.65rem;
+  color: var(--accent);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.spec-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.category-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 1rem;
+}
+
+.category-strip span {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(125, 210, 178, 0.1);
+  color: var(--text);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.76rem;
+  text-transform: uppercase;
+}
+
+.category-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.category-card {
+  min-height: 180px;
+  padding: 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.category-card span {
+  color: var(--accent-2);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.category-card h3 {
+  margin: 0.65rem 0;
+}
+
+.category-card p {
+  margin: 0;
+}
+
 .table-wrap {
   overflow-x: auto;
 }
@@ -609,6 +809,17 @@ td {
 th {
   background: rgba(125, 210, 178, 0.12);
   color: var(--text);
+}
+
+td strong,
+td span {
+  display: block;
+}
+
+td span {
+  margin-top: 0.25rem;
+  color: var(--accent);
+  font-size: 0.82rem;
 }
 
 tr:last-child td {
@@ -729,7 +940,11 @@ tr:last-child td {
   .hero-facts,
   .part-grid,
   .profile-grid,
-  .detail-grid {
+  .detail-grid,
+  .guide-step-list,
+  .compat-grid,
+  .spec-grid,
+  .category-overview {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -787,6 +1002,11 @@ tr:last-child td {
   .part-grid,
   .profile-grid,
   .detail-grid,
+  .guide-step-list,
+  .compat-grid,
+  .spec-grid,
+  .category-overview,
+  .level-tabs,
   .search-panel {
     grid-template-columns: 1fr;
   }
@@ -808,6 +1028,10 @@ tr:last-child td {
 
   .build-steps li {
     grid-template-columns: 42px 1fr;
+  }
+
+  .guide-step {
+    grid-template-columns: 1fr;
   }
 
   .site-footer {

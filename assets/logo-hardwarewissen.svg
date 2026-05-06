@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">HardwareWissen Logo</title>
+  <desc id="desc">HW-Schriftzug in einem stilisierten Computerchip mit Leiterbahnen.</desc>
+  <rect width="256" height="256" rx="32" fill="#f7f9fb" />
+  <g fill="#07111a">
+    <rect x="101" y="28" width="9" height="24" rx="2" />
+    <rect x="123" y="28" width="9" height="24" rx="2" />
+    <rect x="145" y="28" width="9" height="24" rx="2" />
+    <rect x="167" y="28" width="9" height="24" rx="2" />
+    <rect x="189" y="28" width="9" height="24" rx="2" />
+    <rect x="101" y="204" width="9" height="24" rx="2" />
+    <rect x="123" y="204" width="9" height="24" rx="2" />
+    <rect x="145" y="204" width="9" height="24" rx="2" />
+    <rect x="167" y="204" width="9" height="24" rx="2" />
+    <rect x="189" y="204" width="9" height="24" rx="2" />
+    <rect x="42" y="96" width="28" height="8" rx="2" />
+    <rect x="42" y="118" width="28" height="8" rx="2" />
+    <rect x="42" y="140" width="28" height="8" rx="2" />
+    <rect x="42" y="162" width="28" height="8" rx="2" />
+    <rect x="42" y="184" width="28" height="8" rx="2" />
+    <rect x="218" y="96" width="28" height="8" rx="2" />
+    <rect x="218" y="118" width="28" height="8" rx="2" />
+    <rect x="218" y="140" width="28" height="8" rx="2" />
+    <rect x="218" y="162" width="28" height="8" rx="2" />
+    <rect x="218" y="184" width="28" height="8" rx="2" />
+  </g>
+  <path
+    d="M83 63h107l25 25v80l-25 25H83l-25-25V88l25-25Z"
+    fill="none"
+    stroke="#07111a"
+    stroke-width="14"
+    stroke-linejoin="round"
+  />
+  <g fill="#07111a">
+    <path d="M76 107h22v36h35v-36h22v84h-22v-30H98v30H76V107Z" />
+  </g>
+  <path d="M143 107h22l14 50 15-50h22l-25 84h-23l-14-48-14 48h-23l-13-43h23l4 16 12-57Z" fill="#1266f1" />
+  <g fill="none" stroke="#1266f1" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M152 84h36l15-19h18" />
+    <path d="M152 84l-22-22" />
+    <path d="M96 203l18-18h58l13-13h25" />
+    <path d="M96 181h78" />
+    <circle cx="130" cy="62" r="9" fill="#f7f9fb" />
+    <circle cx="210" cy="172" r="9" fill="#f7f9fb" />
+    <circle cx="174" cy="181" r="9" fill="#f7f9fb" />
+    <circle cx="188" cy="65" r="9" fill="#f7f9fb" />
+  </g>
+</svg>

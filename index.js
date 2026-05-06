@@ -1,4 +1,4 @@
-import { hardwareParts } from "./js/data/hardwareParts.js";
+﻿import { hardwareParts } from "./js/data/hardwareParts.js";
 import { renderShell } from "./js/components/Shell.js";
 import { renderHomePage } from "./js/pages/homePage.js";
 import { renderComponentsPage } from "./js/pages/componentsPage.js";
@@ -6,6 +6,7 @@ import { renderBuildPage } from "./js/pages/buildPage.js";
 import { renderCompatibilityPage } from "./js/pages/compatibilityPage.js";
 import { renderImpressumPage } from "./js/pages/impressumPage.js";
 import { renderPartPage } from "./js/pages/partPage.js";
+import { initBuildGuide } from "./js/components/BuildGuide.js";
 import { initComponentSearch } from "./js/components/Search.js";
 
 const page = document.body.dataset.page || "home";
@@ -27,3 +28,7 @@ root.innerHTML = renderShell({
 });
 
 initComponentSearch();
+initBuildGuide();
+
+
+

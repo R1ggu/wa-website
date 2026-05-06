@@ -1,4 +1,4 @@
-export function SectionHeader({ kicker, title, copy }) {
+﻿export function SectionHeader({ kicker, title, copy }) {
   return `
     <div class="section-head">
       <p class="section-kicker">${kicker}</p>
@@ -7,3 +7,6 @@ export function SectionHeader({ kicker, title, copy }) {
     </div>
   `;
 }
+
+
+

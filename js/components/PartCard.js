@@ -1,4 +1,4 @@
-export function PartCard(part, page = "home") {
+﻿export function PartCard(part, page = "home") {
   const href = page === "part" ? part.partHref : part.href;
   const searchText = [
     part.name,
@@ -26,9 +26,12 @@ export function PartCard(part, page = "home") {
           <h3>${part.name}</h3>
           <span class="part-subcategory">${part.subcategory}</span>
           <p>${part.summary}</p>
-          <span class="text-link">Komponente oeffnen</span>
+          <span class="text-link">Komponente öffnen</span>
         </div>
       </a>
     </article>
   `;
 }
+
+
+

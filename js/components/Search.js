@@ -1,4 +1,4 @@
-export function initComponentSearch() {
+﻿export function initComponentSearch() {
   const input = document.querySelector("[data-component-search]");
 
   if (!input) {
@@ -24,7 +24,7 @@ export function initComponentSearch() {
 
     if (status) {
       status.textContent =
-        visibleCount === 1 ? "1 Eintrag gefunden" : `${visibleCount} Eintraege gefunden`;
+        visibleCount === 1 ? "1 Eintrag gefunden" : `${visibleCount} Einträge gefunden`;
     }
 
     if (emptyState) {
@@ -35,3 +35,6 @@ export function initComponentSearch() {
   input.addEventListener("input", updateResults);
   updateResults();
 }
+
+
+

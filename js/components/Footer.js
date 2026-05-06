@@ -1,8 +1,11 @@
-export function Footer() {
+﻿export function Footer() {
   return `
     <footer class="site-footer">
-      <span>Hardware Atlas</span>
-      <span>Statische Mehrseiten-Website fuer Hardware-Wissen.</span>
+      <span>HardwareWissen</span>
+      <span>Statische Mehrseiten-Website für Hardware-Wissen.</span>
     </footer>
   `;
 }
+
+
+

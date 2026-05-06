@@ -1,30 +1,33 @@
-export function renderImpressumPage() {
+﻿export function renderImpressumPage() {
   return `
     <section class="page-hero compact-hero">
       <p class="eyebrow">Legal</p>
       <h1>Impressum</h1>
       <p>
-        This is placeholder legal information for a static demo website.
-        Replace it with the correct responsible person or company before publishing.
+        Dies sind Platzhalterdaten für eine statische Demo-Website.
+        Ersetze sie vor einer Veröffentlichung durch die korrekten Angaben.
       </p>
     </section>
     <section class="content-section legal-grid">
       <address>
-        <strong>Hardware Atlas Demo</strong><br />
-        Responsible person: Max Mustermann<br />
+        <strong>HardwareWissen Demo</strong><br />
+        Verantwortliche Person: Max Mustermann<br />
         Musterstrasse 12<br />
         8000 Zurich, Switzerland<br />
         Email: hello@example.com<br />
         Phone: +41 00 000 00 00
       </address>
       <div>
-        <h2>Image Credits</h2>
+        <h2>Bildnachweise</h2>
         <p>
-          The page uses remotely hosted technology photos from public image
-          providers such as Unsplash. Replace the URLs with your own licensed
-          assets for production work.
+          Die Seite nutzt remote geladene Technikbilder, unter anderem von
+          Wikimedia Commons. Für eine Veröffentlichung solltest du die jeweiligen
+          Lizenzen und Namensnennungen sauber ergänzen.
         </p>
       </div>
     </section>
   `;
 }
+
+
+
