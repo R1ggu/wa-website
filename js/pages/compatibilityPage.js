@@ -13,11 +13,11 @@ export function renderCompatibilityPage(parts) {
 
   return `
     <section class="page-hero compatibility-hero">
-      <p class="eyebrow">Compatibility</p>
-      <h1>Check the boring details before they become real problems.</h1>
+      <p class="eyebrow">Kompatibilitaet</p>
+      <h1>Pruefe die kleinen Details, bevor sie echte Probleme werden.</h1>
       <p>
-        Compatibility is mostly about sockets, sizes, connectors, power,
-        firmware support, and airflow. This table gives you a fast review pass.
+        Kompatibilitaet bedeutet Sockel, Groessen, Kabel, Stecker, Strom,
+        Firmware, Betriebssysteme, Netzwerk und Airflow gemeinsam zu denken.
       </p>
     </section>
     <section class="content-section">
@@ -26,8 +26,8 @@ export function renderCompatibilityPage(parts) {
           <thead>
             <tr>
               <th>Part</th>
-              <th>Specs to check</th>
-              <th>Common mistake</th>
+              <th>Zu pruefende Specs</th>
+              <th>Typischer Fehler</th>
             </tr>
           </thead>
           <tbody>${rows}</tbody>

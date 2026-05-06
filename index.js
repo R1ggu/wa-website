@@ -6,6 +6,7 @@ import { renderBuildPage } from "./js/pages/buildPage.js";
 import { renderCompatibilityPage } from "./js/pages/compatibilityPage.js";
 import { renderImpressumPage } from "./js/pages/impressumPage.js";
 import { renderPartPage } from "./js/pages/partPage.js";
+import { initComponentSearch } from "./js/components/Search.js";
 
 const page = document.body.dataset.page || "home";
 const partKey = document.body.dataset.part || "cpu";
@@ -24,3 +25,5 @@ root.innerHTML = renderShell({
   page,
   content: (pages[page] || pages.home)(),
 });
+
+initComponentSearch();

@@ -1,8 +1,8 @@
 const navItems = [
-  ["index.html", "Home"],
-  ["components.html", "Components"],
-  ["build-guide.html", "Build Guide"],
-  ["compatibility.html", "Compatibility"],
+  ["index.html", "Start"],
+  ["components.html", "Bibliothek"],
+  ["build-guide.html", "Bauanleitung"],
+  ["compatibility.html", "Kompatibilitaet"],
   ["impressum.html", "Impressum"],
 ];
 
@@ -18,11 +18,11 @@ export function Header(page) {
 
   return `
     <header class="site-header">
-      <a class="brand" href="${prefix}index.html" aria-label="Hardware Atlas home">
+      <a class="brand" href="${prefix}index.html" aria-label="Hardware Atlas Startseite">
         <span class="brand-mark">HA</span>
         <span>Hardware Atlas</span>
       </a>
-      <nav class="site-nav" aria-label="Main navigation">${links}</nav>
+      <nav class="site-nav" aria-label="Hauptnavigation">${links}</nav>
     </header>
   `;
 }

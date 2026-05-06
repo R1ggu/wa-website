@@ -8,8 +8,8 @@ export function renderBuildPage() {
           <h3>${profile.name}</h3>
           <dl>
             <div><dt>Budget</dt><dd>${profile.budget}</dd></div>
-            <div><dt>Focus</dt><dd>${profile.focus}</dd></div>
-            <div><dt>Parts</dt><dd>${profile.parts}</dd></div>
+            <div><dt>Fokus</dt><dd>${profile.focus}</dd></div>
+            <div><dt>Teile</dt><dd>${profile.parts}</dd></div>
           </dl>
         </article>
       `,
@@ -22,11 +22,11 @@ export function renderBuildPage() {
 
   return `
     <section class="page-hero build-hero">
-      <p class="eyebrow">Build Guide</p>
-      <h1>Choose parts in an order that prevents expensive mistakes.</h1>
+      <p class="eyebrow">Bauanleitung</p>
+      <h1>Waehle Teile in einer Reihenfolge, die teure Fehler vermeidet.</h1>
       <p>
-        A practical build starts with workload, resolution, and budget. After
-        that, each hardware decision becomes much easier to judge.
+        Ein sinnvoller Build startet mit Einsatzzweck, Monitoraufloesung und
+        Budget. Danach werden die einzelnen Entscheidungen viel klarer.
       </p>
     </section>
     <section class="content-section">
@@ -35,10 +35,10 @@ export function renderBuildPage() {
     <section class="content-section split-section">
       <div>
         <p class="section-kicker">Build Flow</p>
-        <h2>Follow the decision chain.</h2>
+        <h2>Folge der Entscheidungskette.</h2>
         <p>
-          This sequence keeps the biggest compatibility decisions near the
-          beginning and the smaller tuning choices near the end.
+          Diese Reihenfolge bringt die wichtigsten Kompatibilitaetsfragen an
+          den Anfang und die kleineren Feineinstellungen ans Ende.
         </p>
       </div>
       <ol class="build-steps">${steps}</ol>

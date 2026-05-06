@@ -12,36 +12,36 @@ export function renderHomePage(parts) {
     ${Hero()}
     <section class="intro-band">
       <div>
-        <p class="section-kicker">Why it matters</p>
-        <h2>A computer is a system, not a random shopping list.</h2>
+        <p class="section-kicker">Warum es wichtig ist</p>
+        <h2>Ein Computer ist ein System, keine zufaellige Einkaufsliste.</h2>
       </div>
       <p>
-        The fastest part can become wasted money when the rest of the system
-        cannot feed, cool, power, or connect it correctly. This site breaks the
-        build into clear parts, realistic tradeoffs, and practical checks.
+        Das schnellste Teil kann verschwendetes Geld sein, wenn der Rest des
+        Systems es nicht kuehlen, versorgen oder richtig verbinden kann. Diese
+        Website zerlegt den PC in klare Themen und praktische Checks.
       </p>
     </section>
     <section class="content-section">
       ${SectionHeader({
-        kicker: "Featured Parts",
-        title: "Start with the pieces that shape performance.",
-        copy: "Open each component page for deeper explanations, buying checks, common mistakes, and compatibility notes.",
+        kicker: "Wichtige Komponenten",
+        title: "Starte mit den Teilen, die Leistung und Kompatibilitaet praegen.",
+        copy: "Jede Karte fuehrt zu einer eigenen Detailseite mit Specs, typischen Fehlern und Unterkategorien.",
       })}
       <div class="part-grid">${cards}</div>
-      <a class="button inline-button" href="components.html">View all components</a>
+      <a class="button inline-button" href="components.html">Alle Themen ansehen</a>
     </section>
     <section class="image-band">
       <img
-        src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=1500&q=80"
-        alt="Laptop and desktop workspace with electronics"
+        src="https://commons.wikimedia.org/wiki/Special:FilePath/Server_Rack_(54126210834).jpg"
+        alt="Serverrack mit Netzwerk- und Serverhardware"
         loading="lazy"
       />
       <div>
-        <p class="section-kicker">Learning Path</p>
-        <h2>From single part to complete build.</h2>
+        <p class="section-kicker">Lernpfad</p>
+        <h2>Von einzelnen Teilen bis zu Server, Netzwerk und Betriebssystem.</h2>
         <p>
-          Move from component basics to build profiles, then finish with the
-          compatibility checklist before choosing real parts.
+          Gehe von CPU, GPU und RAM weiter zu Kabeln, Ports, Windows, Linux,
+          Servern, Backups und Netzwerktechnik.
         </p>
       </div>
     </section>
