@@ -1,0 +1,110 @@
+{
+  "site": {
+    "title": "HardwareWissen",
+    "subtitle": "PC-Hardware einfach erklärt",
+    "description": "Lerne, welche PC-Komponenten zusammenarbeiten, worauf du beim Kauf achten solltest und wie du einen stabilen Build planst.",
+    "featuredNotice": "Pro-User können diese echten Website-Informationen über das Admin-Panel ändern."
+  },
+  "users": [
+    {
+      "id": "demo-pro",
+      "name": "Pro Demo",
+      "email": "pro@example.com",
+      "password": "pro12345",
+      "isPro": true,
+      "sessionToken": ""
+    }
+  ],
+  "parts": [
+    {
+      "id": "cpu",
+      "name": "CPU",
+      "fullName": "Central Processing Unit",
+      "category": "Kernkomponenten",
+      "summary": "Die CPU führt Befehle aus, koordiniert Programme und hält das Betriebssystem reaktionsschnell.",
+      "specs": [
+        "Kerne und Threads",
+        "Boost-Takt",
+        "Sockel",
+        "Cache",
+        "Leistungsaufnahme"
+      ]
+    },
+    {
+      "id": "gpu",
+      "name": "GPU",
+      "fullName": "Graphics Processing Unit",
+      "category": "Kernkomponenten",
+      "summary": "Die GPU rendert Bilder und beschleunigt stark parallele Grafik-, Video- und Rechenaufgaben.",
+      "specs": [
+        "VRAM",
+        "Leistungsaufnahme",
+        "Kartenlänge",
+        "Display-Ausgänge",
+        "Raytracing"
+      ]
+    },
+    {
+      "id": "ram",
+      "name": "RAM",
+      "fullName": "Random Access Memory",
+      "category": "Kernkomponenten",
+      "summary": "RAM speichert aktive Daten, damit die CPU viel schneller darauf zugreifen kann als auf eine SSD.",
+      "specs": [
+        "Kapazität",
+        "DDR-Generation",
+        "Takt",
+        "Latenz",
+        "Modulhöhe"
+      ]
+    },
+    {
+      "id": "storage",
+      "name": "SSD / Speicher",
+      "fullName": "SSD und Massenspeicher",
+      "category": "Kernkomponenten",
+      "summary": "Speicher hält Betriebssystem, Programme, Projekte, Fotos, Videos und Spiele auch nach dem Ausschalten bereit.",
+      "specs": [
+        "Kapazität",
+        "NVMe oder SATA",
+        "PCIe-Generation",
+        "TBW",
+        "Temperatur"
+      ]
+    },
+    {
+      "id": "motherboard",
+      "name": "Mainboard",
+      "fullName": "Motherboard / Mainboard",
+      "category": "Kernkomponenten",
+      "summary": "Das Mainboard verbindet alle Teile und entscheidet, welche CPUs, RAM-Module, Slots und Anschlüsse möglich sind.",
+      "specs": [
+        "Sockel",
+        "Chipsatz",
+        "VRM",
+        "RAM-Support",
+        "Erweiterungsslots"
+      ]
+    },
+    {
+      "id": "psu",
+      "name": "Netzteil",
+      "fullName": "Power Supply Unit",
+      "category": "Kernkomponenten",
+      "summary": "Das Netzteil wandelt Steckdosenstrom in stabile Spannungen für die internen PC-Komponenten um.",
+      "specs": [
+        "Wattzahl",
+        "Effizienz",
+        "Kabel",
+        "Modularität",
+        "Garantie"
+      ]
+    }
+  ],
+  "buildTips": [
+    "Erst CPU, Mainboard und RAM gemeinsam prüfen.",
+    "Danach GPU, Netzteil und Gehäuse-Freiraum vergleichen.",
+    "Dann Speicher, M.2-Slots, SATA-Ports und Kabel planen.",
+    "Zum Schluss Betriebssystem, Treiber, Netzwerk und Backup absichern."
+  ]
+}

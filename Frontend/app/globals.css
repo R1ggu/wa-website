@@ -1,0 +1,290 @@
+:root {
+  --bg: #f6f8f4;
+  --ink: #16211c;
+  --muted: #5d6a63;
+  --line: #d9e2da;
+  --panel: #ffffff;
+  --green: #16765b;
+  --yellow: #f4c542;
+  --blue: #27628f;
+  --red: #be4d45;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.topbar {
+  align-items: center;
+  background: #ffffffd9;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  padding: 16px clamp(18px, 4vw, 48px);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.brand {
+  display: grid;
+  gap: 2px;
+}
+
+.brand strong {
+  font-size: 1.08rem;
+}
+
+.brand span,
+.user-line,
+.muted {
+  color: var(--muted);
+}
+
+.nav-actions {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+}
+
+.icon-button,
+.primary-button,
+.secondary-button {
+  align-items: center;
+  border-radius: 8px;
+  display: inline-flex;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+}
+
+.icon-button,
+.secondary-button {
+  background: #e8efe9;
+  color: var(--ink);
+}
+
+.primary-button {
+  background: var(--green);
+  color: white;
+}
+
+.hero {
+  background:
+    linear-gradient(90deg, rgba(22, 33, 28, 0.85), rgba(22, 33, 28, 0.45)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Computer%20case%2020170910.jpg");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  min-height: 52vh;
+  padding: clamp(48px, 8vw, 96px) clamp(18px, 4vw, 48px);
+}
+
+.hero-content {
+  max-width: 760px;
+}
+
+.eyebrow {
+  color: var(--yellow);
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(2.4rem, 6vw, 5rem);
+  line-height: 1;
+  margin: 12px 0 18px;
+}
+
+h2 {
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+.section {
+  padding: clamp(32px, 5vw, 64px) clamp(18px, 4vw, 48px);
+}
+
+.section-header {
+  align-items: end;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+}
+
+.card,
+.auth-panel,
+.editor-panel {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.card {
+  padding: 18px;
+}
+
+.card-top {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.badge {
+  background: #edf3ee;
+  border-radius: 999px;
+  color: var(--green);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 5px 9px;
+}
+
+.card p,
+.tips li {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.specs span {
+  background: #f0f4f6;
+  border-radius: 6px;
+  color: var(--blue);
+  font-size: 0.82rem;
+  padding: 6px 8px;
+}
+
+.dashboard {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(300px, 1.2fr);
+}
+
+.auth-panel,
+.editor-panel {
+  padding: 20px;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.tabs button {
+  background: #e8efe9;
+  border-radius: 8px;
+  min-height: 38px;
+}
+
+.tabs button.active {
+  background: var(--ink);
+  color: white;
+}
+
+form {
+  display: grid;
+  gap: 12px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+}
+
+input,
+textarea {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 11px 12px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.checkbox {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+
+.checkbox input {
+  width: auto;
+}
+
+.message {
+  color: var(--blue);
+  min-height: 20px;
+}
+
+.error {
+  color: var(--red);
+}
+
+.tips {
+  margin: 0;
+  padding-left: 20px;
+}
+
+@media (max-width: 760px) {
+  .topbar,
+  .section-header,
+  .nav-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+}
