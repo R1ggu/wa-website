@@ -21,6 +21,7 @@
       "name": "CPU",
       "fullName": "Central Processing Unit",
       "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cpu_1.jpg",
       "summary": "Die CPU führt Befehle aus, koordiniert Programme und hält das Betriebssystem reaktionsschnell.",
       "specs": [
         "Kerne und Threads",
@@ -35,6 +36,7 @@
       "name": "GPU",
       "fullName": "Graphics Processing Unit",
       "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A_Complex_Graphics_Card.jpg",
       "summary": "Die GPU rendert Bilder und beschleunigt stark parallele Grafik-, Video- und Rechenaufgaben.",
       "specs": [
         "VRAM",
@@ -49,6 +51,7 @@
       "name": "RAM",
       "fullName": "Random Access Memory",
       "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/RAM_Module_(SDRAM-DDR4).jpg",
       "summary": "RAM speichert aktive Daten, damit die CPU viel schneller darauf zugreifen kann als auf eine SSD.",
       "specs": [
         "Kapazität",
@@ -63,6 +66,7 @@
       "name": "SSD / Speicher",
       "fullName": "SSD und Massenspeicher",
       "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung_960_EVO_NVME_M.2_SSD_by_Daniel_Aleksandersen.jpg",
       "summary": "Speicher hält Betriebssystem, Programme, Projekte, Fotos, Videos und Spiele auch nach dem Ausschalten bereit.",
       "specs": [
         "Kapazität",
@@ -77,6 +81,7 @@
       "name": "Mainboard",
       "fullName": "Motherboard / Mainboard",
       "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Motherboard_(4313245815).jpg",
       "summary": "Das Mainboard verbindet alle Teile und entscheidet, welche CPUs, RAM-Module, Slots und Anschlüsse möglich sind.",
       "specs": [
         "Sockel",
@@ -91,6 +96,7 @@
       "name": "Netzteil",
       "fullName": "Power Supply Unit",
       "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Full_modular_ATX_power_supply_unit.jpg",
       "summary": "Das Netzteil wandelt Steckdosenstrom in stabile Spannungen für die internen PC-Komponenten um.",
       "specs": [
         "Wattzahl",

@@ -10,6 +10,7 @@ export default function PartGrid({ parts }) {
       <div className="grid">
         {parts.map((part) => (
           <article className="card" key={part.id}>
+            {part.image && <img className="part-image" src={part.image} alt={part.fullName} />}
             <div className="card-top">
               <h3>{part.name}</h3>
               <span className="badge">{part.category}</span>
