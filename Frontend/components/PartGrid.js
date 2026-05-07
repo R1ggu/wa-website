@@ -4,7 +4,7 @@ export default function PartGrid({ parts }) {
       <div className="section-header">
         <div>
           <h2>Hardware-Komponenten</h2>
-          <p className="muted">Diese Daten kommen aus `Backend/database.json` über `/api/data`.</p>
+          <p className="muted">Die wichtigsten PC-Teile, Anschlüsse, Systeme und Wartungsthemen in einer kompakten Übersicht.</p>
         </div>
       </div>
       <div className="grid">

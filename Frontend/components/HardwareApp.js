@@ -40,8 +40,8 @@ export default function HardwareApp({ initialData }) {
       <section className="section">
         <div className="section-header">
           <div>
-            <h2>Build-Workflow</h2>
-            <p className="muted">Auch diese Liste liegt im JSON und kann später über weitere API-Routen erweitert werden.</p>
+            <h2>Build-Plan</h2>
+            <p className="muted">Diese Reihenfolge hilft dir, Leistung, Kompatibilität, Stromversorgung und Wartung sauber zusammenzudenken.</p>
           </div>
         </div>
         <ol className="tips">

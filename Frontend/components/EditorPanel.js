@@ -41,7 +41,7 @@ export default function EditorPanel({ site, user, onSiteChange }) {
   return (
     <div className="editor-panel">
       <h2>Website bearbeiten</h2>
-      <p className="muted">Nur eingeloggte Pro-User können diese Daten über die API in der JSON-Datenbank speichern.</p>
+      <p className="muted">Pro-Mitglieder können Titel, Beschreibung und Hinweise der Website anpassen.</p>
 
       <form onSubmit={save}>
         <label>

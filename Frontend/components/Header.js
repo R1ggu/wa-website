@@ -7,7 +7,7 @@ export default function Header({ user, onLogout }) {
     <header className="topbar">
       <div className="brand">
         <strong>HardwareWissen</strong>
-        <span>React, Next API und JSON-Datenbank</span>
+        <span>PC-Komponenten verstehen und Builds sicher planen</span>
       </div>
       <div className="nav-actions">
         {user ? (

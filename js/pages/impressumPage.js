@@ -4,13 +4,13 @@
       <p class="eyebrow">Legal</p>
       <h1>Impressum</h1>
       <p>
-        Dies sind Platzhalterdaten für eine statische Demo-Website.
-        Ersetze sie vor einer Veröffentlichung durch die korrekten Angaben.
+        Angaben zum Anbieter, zur Kontaktaufnahme und zu den verwendeten
+        Bildquellen.
       </p>
     </section>
     <section class="content-section legal-grid">
       <address>
-        <strong>HardwareWissen Demo</strong><br />
+        <strong>HardwareWissen</strong><br />
         Verantwortliche Person: Max Mustermann<br />
         Musterstrasse 12<br />
         8000 Zurich, Switzerland<br />

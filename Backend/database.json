@@ -3,21 +3,28 @@
     "title": "HardwareWissen",
     "subtitle": "PC-Hardware einfach erklärt",
     "description": "Lerne, welche PC-Komponenten zusammenarbeiten, worauf du beim Kauf achten solltest und wie du einen stabilen Build planst.",
-    "featuredNotice": "Pro-User können diese echten Website-Informationen über das Admin-Panel ändern."
+    "featuredNotice": "Pro-Mitglieder erhalten erweiterte Checklisten, Build-Hinweise und Zugriff auf zusätzliche Planungshilfen."
   },
   "users": [
     {
       "id": "demo-pro",
-      "name": "Pro Demo",
+      "name": "Pro Mitglied",
       "email": "pro@example.com",
       "password": "pro12345",
       "isPro": true,
       "sessionToken": ""
+    },
+    {
+      "id": "user-1778158185548",
+      "name": "ewglkhfoiuwhfw",
+      "email": "ewfwf@ew8hw.ch",
+      "password": "weoifhowh3257\"££_£",
+      "isPro": true,
+      "sessionToken": "movhh0zw-1na91zg8gyj"
     }
   ],
   "parts": [
     {
-      "id": "cpu",
       "name": "CPU",
       "fullName": "Central Processing Unit",
       "category": "Kernkomponenten",
@@ -32,7 +39,6 @@
       ]
     },
     {
-      "id": "gpu",
       "name": "GPU",
       "fullName": "Graphics Processing Unit",
       "category": "Kernkomponenten",
@@ -47,7 +53,6 @@
       ]
     },
     {
-      "id": "ram",
       "name": "RAM",
       "fullName": "Random Access Memory",
       "category": "Kernkomponenten",
@@ -62,7 +67,6 @@
       ]
     },
     {
-      "id": "storage",
       "name": "SSD / Speicher",
       "fullName": "SSD und Massenspeicher",
       "category": "Kernkomponenten",
@@ -77,7 +81,6 @@
       ]
     },
     {
-      "id": "motherboard",
       "name": "Mainboard",
       "fullName": "Motherboard / Mainboard",
       "category": "Kernkomponenten",
@@ -92,7 +95,6 @@
       ]
     },
     {
-      "id": "psu",
       "name": "Netzteil",
       "fullName": "Power Supply Unit",
       "category": "Kernkomponenten",
@@ -104,6 +106,342 @@
         "Kabel",
         "Modularität",
         "Garantie"
+      ]
+    },
+    {
+      "name": "Kühlung",
+      "fullName": "Airflow und Wärmeabfuhr",
+      "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cooler_Master_Hyper_212_EVO_-_CPU_Cooler_with_120mm_PWM_Fan_(RR-212E-20PK-R2).jpg",
+      "summary": "Kühlung transportiert Wärme von CPU, GPU, SSD und Spannungswandlern weg, damit Leistung stabil bleibt.",
+      "specs": [
+        "Kühlerhöhe",
+        "Radiator-Support",
+        "Lüftergröße",
+        "Lautstärke",
+        "Airflow-Pfad"
+      ]
+    },
+    {
+      "name": "Gehäuse",
+      "fullName": "Computer Chassis",
+      "category": "Kernkomponenten",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Computer_case_20170910.jpg",
+      "summary": "Das Gehäuse hält alle Teile, beeinflusst Airflow, Lautstärke, Platzbedarf und Wartbarkeit.",
+      "specs": [
+        "Mainboard-Größe",
+        "GPU-Freiraum",
+        "Kühler-Freiraum",
+        "Lüfterplätze",
+        "Front-I/O"
+      ]
+    },
+    {
+      "name": "SATA-Kabel",
+      "fullName": "Serial ATA Datenkabel",
+      "category": "Kabel und Stecker",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/SATA_cables_(2026).jpg",
+      "summary": "SATA-Kabel verbinden SATA-SSDs, HDDs und optische Laufwerke mit dem Mainboard.",
+      "specs": [
+        "SATA III",
+        "Kabellänge",
+        "Gerader Stecker",
+        "Winkelstecker",
+        "Mainboard-Port"
+      ]
+    },
+    {
+      "name": "PC-Stromkabel",
+      "fullName": "ATX, EPS und PCIe Stromkabel",
+      "category": "Kabel und Stecker",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/PowerSupplyUnit_24Pins.png",
+      "summary": "Stromkabel versorgen Mainboard, CPU, GPU, Laufwerke und Zubehör mit den passenden Spannungen.",
+      "specs": [
+        "24-Pin ATX",
+        "8-Pin EPS",
+        "PCIe 6+2",
+        "12VHPWR",
+        "SATA Power"
+      ]
+    },
+    {
+      "name": "PCIe-Slot",
+      "fullName": "PCI Express Erweiterungssteckplatz",
+      "category": "Kabel und Stecker",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Pci_Express_Slot.png",
+      "summary": "PCIe-Slots nehmen Grafikkarten, Soundkarten, Netzwerkkarten, Capture-Karten und Speicheradapter auf.",
+      "specs": [
+        "x1",
+        "x4",
+        "x8",
+        "x16",
+        "PCIe Generation"
+      ]
+    },
+    {
+      "name": "USB-Ports",
+      "fullName": "USB-A, USB-C und interne USB-Header",
+      "category": "Kabel und Stecker",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/USB-Connector-Standard.jpg",
+      "summary": "USB verbindet Maus, Tastatur, Headset, Controller, externe SSDs, Kameras und viele andere Geräte.",
+      "specs": [
+        "USB-A",
+        "USB-C",
+        "USB 3.x",
+        "Thunderbolt",
+        "Frontpanel-Header"
+      ]
+    },
+    {
+      "name": "Ethernet / RJ45",
+      "fullName": "Kabelgebundene Netzwerkverbindung",
+      "category": "Netzwerk und Server",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Cat-5e_Ethernet_network_cable_RJ45_end_connectors.jpg",
+      "summary": "Ethernet verbindet PCs, Router, Switches, NAS und Server stabil über Netzwerkkabel.",
+      "specs": [
+        "1 Gbit/s",
+        "2,5 Gbit/s",
+        "10 Gbit/s",
+        "Cat5e",
+        "Cat6"
+      ]
+    },
+    {
+      "name": "HDMI / DisplayPort",
+      "fullName": "Monitor- und TV-Anschlüsse",
+      "category": "Kabel und Stecker",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DisplayPort_(connector).PNG",
+      "summary": "HDMI und DisplayPort übertragen Bild und Ton von GPU, Mainboard oder Laptop zum Monitor.",
+      "specs": [
+        "HDMI 2.1",
+        "DisplayPort 1.4",
+        "DisplayPort 2.x",
+        "HDR",
+        "Variable Refresh Rate"
+      ]
+    },
+    {
+      "name": "M.2-Slot",
+      "fullName": "M.2 Anschluss für SSDs und Erweiterungen",
+      "category": "Kabel und Stecker",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Samsung_960_EVO_NVME_M.2_SSD_by_Daniel_Aleksandersen.jpg",
+      "summary": "M.2-Slots nehmen kompakte SSDs oder Funkmodule direkt auf dem Mainboard auf.",
+      "specs": [
+        "M-Key",
+        "B-Key",
+        "2280",
+        "PCIe 4.0",
+        "PCIe 5.0"
+      ]
+    },
+    {
+      "name": "BIOS / UEFI",
+      "fullName": "Mainboard-Firmware",
+      "category": "Software und Systeme",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/BIOS_Setup_First_Time.jpg",
+      "summary": "BIOS bzw. UEFI startet den PC, erkennt Hardware und stellt Grundfunktionen vor dem Betriebssystem bereit.",
+      "specs": [
+        "Boot Mode",
+        "XMP / EXPO",
+        "Secure Boot",
+        "TPM",
+        "BIOS Flashback"
+      ]
+    },
+    {
+      "name": "Windows",
+      "fullName": "Microsoft Windows",
+      "category": "Software und Systeme",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Microsoft_Windows_11.png",
+      "summary": "Windows ist das verbreitete Desktop-Betriebssystem für Gaming, Office, Schule, Treiber und viele Programme.",
+      "specs": [
+        "Edition",
+        "Lizenz",
+        "Treiber",
+        "Updates",
+        "Secure Boot / TPM"
+      ]
+    },
+    {
+      "name": "Linux",
+      "fullName": "Linux-Distributionen",
+      "category": "Software und Systeme",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Kali_Linux_Desktop.png",
+      "summary": "Linux ist ein freies Betriebssystem-Ökosystem für Server, Entwicklung, Datenschutz und flexible Desktop-Setups.",
+      "specs": [
+        "Distribution",
+        "Kernel",
+        "Paketmanager",
+        "Desktop Environment",
+        "Dateisystem"
+      ]
+    },
+    {
+      "name": "Server",
+      "fullName": "Server-Hardware und Dienste",
+      "category": "Netzwerk und Server",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Server_Rack_(54126210834).jpg",
+      "summary": "Server stellen Dienste wie Webseiten, Dateien, Datenbanken, Backups oder virtuelle Maschinen dauerhaft bereit.",
+      "specs": [
+        "ECC-RAM",
+        "RAID",
+        "Redundante Netzteile",
+        "Remote Management",
+        "Uptime"
+      ]
+    },
+    {
+      "name": "Netzwerk-Switch",
+      "fullName": "Ethernet Switch",
+      "category": "Netzwerk und Server",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Network_Device_(Switch).jpg",
+      "summary": "Ein Switch verbindet mehrere kabelgebundene Geräte in einem lokalen Netzwerk.",
+      "specs": [
+        "Port-Anzahl",
+        "1G / 2,5G / 10G",
+        "PoE",
+        "Managed",
+        "VLAN"
+      ]
+    },
+    {
+      "name": "Router",
+      "fullName": "Heimrouter und Gateway",
+      "category": "Netzwerk und Server",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Netgear_N300_wireless_router_n01.jpg",
+      "summary": "Der Router verbindet dein lokales Netzwerk mit dem Internet und verteilt IP-Adressen.",
+      "specs": [
+        "WAN-Port",
+        "LAN-Ports",
+        "WLAN-Standard",
+        "Firewall",
+        "VPN"
+      ]
+    },
+    {
+      "name": "WLAN / Wi-Fi",
+      "fullName": "Drahtloses Netzwerk",
+      "category": "Netzwerk und Server",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Wireless_router%2C_internal_components_(LevelOne_WBR-6002).jpg",
+      "summary": "WLAN verbindet Geräte ohne Netzwerkkabel und ist bequem für Laptops, Smartphones und mobile Hardware.",
+      "specs": [
+        "Wi-Fi 5",
+        "Wi-Fi 6",
+        "Wi-Fi 6E",
+        "Wi-Fi 7",
+        "Antenne"
+      ]
+    },
+    {
+      "name": "Soundkarte",
+      "fullName": "Interne oder externe Audio-Hardware",
+      "category": "Peripherie und Erweiterung",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Sound_card_2.jpg",
+      "summary": "Soundkarten verbessern oder erweitern Audio-Ein- und Ausgänge eines PCs.",
+      "specs": [
+        "DAC",
+        "ADC",
+        "SNR",
+        "Kopfhörerverstärker",
+        "Treiber"
+      ]
+    },
+    {
+      "name": "Wärmeleitpaste",
+      "fullName": "Thermal Paste",
+      "category": "Wartung und Aufbau",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Thermal_Paste_9648.jpg",
+      "summary": "Wärmeleitpaste füllt mikroskopische Unebenheiten zwischen CPU und Kühler.",
+      "specs": [
+        "Menge",
+        "Viskosität",
+        "Leitfähigkeit",
+        "Haltbarkeit",
+        "Reinigung"
+      ]
+    },
+    {
+      "name": "Fan-Header",
+      "fullName": "3-Pin und 4-Pin Lüfteranschlüsse",
+      "category": "Kabel und Stecker",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Atx_computer_motherboard_with_cpu_and_fan.jpg",
+      "summary": "Fan-Header verbinden Gehäuse- und CPU-Lüfter mit dem Mainboard.",
+      "specs": [
+        "3-Pin DC",
+        "4-Pin PWM",
+        "Ampere-Limit",
+        "CPU_FAN",
+        "SYS_FAN"
+      ]
+    },
+    {
+      "name": "Monitor",
+      "fullName": "Bildschirm",
+      "category": "Peripherie und Erweiterung",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Computer_monitor.jpg",
+      "summary": "Der Monitor entscheidet, wie du die Leistung des PCs wirklich siehst: Auflösung, Bildrate, Farben und Größe.",
+      "specs": [
+        "Auflösung",
+        "Hz",
+        "Paneltyp",
+        "Farbraum",
+        "Adaptive Sync"
+      ]
+    },
+    {
+      "name": "Tastatur",
+      "fullName": "Keyboard",
+      "category": "Peripherie und Erweiterung",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Computer_keyboard.png",
+      "summary": "Die Tastatur ist das wichtigste Eingabegerät für Schreiben, Programmieren, Shortcuts und viele Spiele.",
+      "specs": [
+        "Layout",
+        "Switches",
+        "Formfaktor",
+        "N-Key Rollover",
+        "Funk oder Kabel"
+      ]
+    },
+    {
+      "name": "Maus",
+      "fullName": "Computer Mouse",
+      "category": "Peripherie und Erweiterung",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/A_computer_mouse.jpg",
+      "summary": "Die Maus steuert Cursor, Kamera, Auswahl und Präzision in Desktop- und Gaming-Anwendungen.",
+      "specs": [
+        "Sensor",
+        "DPI",
+        "Gewicht",
+        "Polling Rate",
+        "Ergonomie"
+      ]
+    },
+    {
+      "name": "Treiber",
+      "fullName": "Device Drivers",
+      "category": "Software und Systeme",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hardware_is_disabled.png",
+      "summary": "Treiber übersetzen zwischen Betriebssystem und Hardware, damit Geräte korrekt funktionieren.",
+      "specs": [
+        "Chipsatztreiber",
+        "GPU-Treiber",
+        "Audio",
+        "LAN / WLAN",
+        "Firmware"
+      ]
+    },
+    {
+      "name": "Backup",
+      "fullName": "Datensicherung",
+      "category": "Software und Systeme",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/External_hard_drives.jpg",
+      "summary": "Backups schützen deine Daten vor Defekten, Fehlern, Diebstahl, Ransomware und versehentlichem Löschen.",
+      "specs": [
+        "3-2-1-Regel",
+        "Versionierung",
+        "Externe Platte",
+        "NAS",
+        "Cloud"
       ]
     }
   ],
