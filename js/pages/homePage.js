@@ -1,5 +1,6 @@
 ﻿import { Hero } from "../components/Hero.js";
 import { PartCard } from "../components/PartCard.js";
+import { ProCheckout } from "../components/ProCheckout.js";
 import { SectionHeader } from "../components/SectionHeader.js";
 
 export function renderHomePage(parts) {
@@ -45,6 +46,7 @@ export function renderHomePage(parts) {
         </p>
       </div>
     </section>
+    ${ProCheckout()}
   `;
 }
 

@@ -110,7 +110,7 @@ export const hardwareParts = {
     subcategory: "Langzeitspeicher",
     href: "parts/storage.html",
     partHref: "storage.html",
-    image: commonsImage("WesterDigital-Black-NVMe-SSD.jpg"),
+    image: commonsImage("Samsung 960 EVO NVME M.2 SSD by Daniel Aleksandersen.jpg"),
     summary:
       "Speicher hält Betriebssystem, Programme, Projekte, Fotos, Videos und Spiele auch nach dem Ausschalten bereit.",
     purpose:
@@ -176,7 +176,7 @@ export const hardwareParts = {
     subcategory: "Strom",
     href: "parts/psu.html",
     partHref: "psu.html",
-    image: commonsImage("ATX Computer power supply unit.jpg"),
+    image: commonsImage("Full modular ATX power supply unit.jpg"),
     summary:
       "Das Netzteil wandelt Steckdosenstrom in stabile Spannungen für die internen PC-Komponenten um.",
     purpose:
@@ -275,7 +275,7 @@ export const hardwareParts = {
     subcategory: "Storage-Verbindung",
     href: "parts/sata-cable.html",
     partHref: "sata-cable.html",
-    image: commonsImage("SATA cable.jpg"),
+    image: commonsImage("SATA cables (2026).jpg"),
     summary:
       "SATA-Kabel verbinden SATA-SSDs, HDDs und optische Laufwerke mit dem Mainboard.",
     purpose:
@@ -304,7 +304,7 @@ export const hardwareParts = {
     subcategory: "Power Delivery",
     href: "parts/power-cables.html",
     partHref: "power-cables.html",
-    image: commonsImage("Sata power cable.JPG"),
+    image: commonsImage("PowerSupplyUnit 24Pins.png"),
     summary:
       "Stromkabel versorgen Mainboard, CPU, GPU, Laufwerke und Zubehör mit den passenden Spannungen.",
     purpose:
@@ -391,7 +391,7 @@ export const hardwareParts = {
     subcategory: "LAN",
     href: "parts/ethernet.html",
     partHref: "ethernet.html",
-    image: commonsImage("Ethernet RJ45 connector p1160054.jpg"),
+    image: commonsImage("Cat-5e Ethernet network cable RJ45 end connectors.jpg"),
     summary:
       "Ethernet verbindet PCs, Router, Switches, NAS und Server stabil über Netzwerkkabel.",
     purpose:
@@ -420,7 +420,7 @@ export const hardwareParts = {
     subcategory: "Videoausgabe",
     href: "parts/hdmi-displayport.html",
     partHref: "hdmi-displayport.html",
-    image: commonsImage("HDMI-Connector.jpg"),
+    image: commonsImage("DisplayPort (connector).PNG"),
     summary:
       "HDMI und DisplayPort übertragen Bild und Ton von GPU, Mainboard oder Laptop zum Monitor.",
     purpose:
@@ -449,7 +449,7 @@ export const hardwareParts = {
     subcategory: "Storage-Slot",
     href: "parts/m2-slot.html",
     partHref: "m2-slot.html",
-    image: commonsImage("1TB 2280 NVME SSD.jpg"),
+    image: commonsImage("Samsung 960 EVO NVME M.2 SSD by Daniel Aleksandersen.jpg"),
     summary:
       "M.2-Slots nehmen kompakte SSDs oder Funkmodule direkt auf dem Mainboard auf.",
     purpose:
@@ -507,7 +507,7 @@ export const hardwareParts = {
     subcategory: "Desktop-OS",
     href: "parts/windows.html",
     partHref: "windows.html",
-    image: commonsImage("Windows 11 logo.svg"),
+    image: commonsImage("Microsoft Windows 11.png"),
     summary:
       "Windows ist das verbreitete Desktop-Betriebssystem für Gaming, Office, Schule, Treiber und viele Programme.",
     purpose:
@@ -536,7 +536,7 @@ export const hardwareParts = {
     subcategory: "Desktop und Server",
     href: "parts/linux.html",
     partHref: "linux.html",
-    image: commonsImage("NewTux.svg"),
+    image: commonsImage("Kali Linux Desktop.png"),
     summary:
       "Linux ist ein freies Betriebssystem-Ökosystem für Server, Entwicklung, Datenschutz und flexible Desktop-Setups.",
     purpose:
@@ -594,7 +594,7 @@ export const hardwareParts = {
     subcategory: "Netzwerk-Hub",
     href: "parts/network-switch.html",
     partHref: "network-switch.html",
-    image: commonsImage("Network switches.jpg"),
+    image: commonsImage("Network Device (Switch).jpg"),
     summary:
       "Ein Switch verbindet mehrere kabelgebundene Geräte in einem lokalen Netzwerk.",
     purpose:
@@ -681,7 +681,7 @@ export const hardwareParts = {
     subcategory: "Audio",
     href: "parts/sound-card.html",
     partHref: "sound-card.html",
-    image: commonsImage("Turtle-Beach-Sound-Card.jpg"),
+    image: commonsImage("Sound card 2.jpg"),
     summary:
       "Soundkarten verbessern oder erweitern Audio-Ein- und Ausgänge eines PCs.",
     purpose:
@@ -797,7 +797,7 @@ export const hardwareParts = {
     subcategory: "Eingabegerät",
     href: "parts/keyboard.html",
     partHref: "keyboard.html",
-    image: commonsImage("Keyboard with mouse.jpg"),
+    image: commonsImage("Computer keyboard.png"),
     summary:
       "Die Tastatur ist das wichtigste Eingabegerät für Schreiben, Programmieren, Shortcuts und viele Spiele.",
     purpose:
@@ -826,7 +826,7 @@ export const hardwareParts = {
     subcategory: "Zeigegerät",
     href: "parts/mouse.html",
     partHref: "mouse.html",
-    image: commonsImage("Keyboard with mouse.jpg"),
+    image: commonsImage("A computer mouse.jpg"),
     summary:
       "Die Maus steuert Cursor, Kamera, Auswahl und Präzision in Desktop- und Gaming-Anwendungen.",
     purpose:
@@ -855,7 +855,7 @@ export const hardwareParts = {
     subcategory: "Hardware-Kommunikation",
     href: "parts/drivers.html",
     partHref: "drivers.html",
-    image: commonsImage("BIOS Setup First Time.jpg"),
+    image: commonsImage("Hardware is disabled.png"),
     summary:
       "Treiber übersetzen zwischen Betriebssystem und Hardware, damit Geräte korrekt funktionieren.",
     purpose:

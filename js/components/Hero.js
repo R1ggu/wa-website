@@ -16,6 +16,7 @@
         <div class="hero-actions" aria-label="Hauptaktionen">
           <a class="button primary" href="components.html">Bibliothek durchsuchen</a>
           <a class="button secondary" href="build-guide.html">Build planen</a>
+          <a class="button secondary" href="#pro">Pro testen</a>
         </div>
       </div>
       <div class="hero-facts" aria-label="Website-Fakten">

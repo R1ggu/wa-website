@@ -471,6 +471,87 @@ address {
   outline: none;
 }
 
+.pro-checkout-section {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1fr);
+  gap: 1.25rem;
+}
+
+.pro-checkout-form {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.pro-checkout-form label,
+.checkbox-line {
+  display: grid;
+  gap: 0.45rem;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.pro-checkout-form input {
+  width: 100%;
+  min-height: 44px;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(14, 17, 20, 0.86);
+  color: var(--text);
+  font: inherit;
+}
+
+.pro-checkout-form input:focus {
+  border-color: var(--line-strong);
+  outline: none;
+}
+
+.pro-price-panel {
+  display: grid;
+  gap: 0.2rem;
+  padding: 1rem;
+  border: 1px solid rgba(125, 210, 178, 0.55);
+  border-radius: var(--radius);
+  background: rgba(125, 210, 178, 0.1);
+}
+
+.pro-price-panel span,
+.pro-price-panel small,
+.pro-status {
+  color: var(--muted);
+}
+
+.pro-price-panel strong {
+  color: var(--accent);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1;
+}
+
+.payment-row {
+  display: grid;
+  grid-template-columns: 1fr 0.65fr;
+  gap: 0.75rem;
+}
+
+.checkbox-line {
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  color: var(--muted);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.checkbox-line input {
+  width: auto;
+  min-height: 0;
+  margin-top: 0.25rem;
+}
+
+.pro-status {
+  min-height: 1.5rem;
+  margin: 0;
+}
+
 .empty-state {
   margin: 1rem 0 0;
   padding: 1rem;
@@ -502,26 +583,26 @@ address {
   isolation: isolate;
   background:
     linear-gradient(90deg, rgba(16, 17, 19, 0.45), rgba(16, 17, 19, 0.1)),
-    url("https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=1800&q=80") center/cover;
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Motherboard_(4313245815).jpg") center/cover;
 }
 
 .compact-hero {
   min-height: 360px;
   background:
     linear-gradient(90deg, rgba(16, 17, 19, 0.56), rgba(16, 17, 19, 0.2)),
-    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1800&q=80") center/cover;
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Server_Rack_(54126210834).jpg") center/cover;
 }
 
 .build-hero {
   background:
     linear-gradient(90deg, rgba(16, 17, 19, 0.6), rgba(16, 17, 19, 0.12)),
-    url("https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1800&q=80") center/cover;
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Computer_case_20170910.jpg") center/cover;
 }
 
 .compatibility-hero {
   background:
     linear-gradient(90deg, rgba(16, 17, 19, 0.72), rgba(16, 17, 19, 0.24)),
-    url("https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1800&q=80") center/cover;
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Pci_Express_Slot.png") center/cover;
 }
 
 .profile-grid {
@@ -951,7 +1032,8 @@ tr:last-child td {
   .intro-band,
   .image-band,
   .split-section,
-  .legal-grid {
+  .legal-grid,
+  .pro-checkout-section {
     grid-template-columns: 1fr;
   }
 }
@@ -1007,7 +1089,8 @@ tr:last-child td {
   .spec-grid,
   .category-overview,
   .level-tabs,
-  .search-panel {
+  .search-panel,
+  .payment-row {
     grid-template-columns: 1fr;
   }
 

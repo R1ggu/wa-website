@@ -7,6 +7,7 @@ import { renderCompatibilityPage } from "./js/pages/compatibilityPage.js";
 import { renderImpressumPage } from "./js/pages/impressumPage.js";
 import { renderPartPage } from "./js/pages/partPage.js";
 import { initBuildGuide } from "./js/components/BuildGuide.js";
+import { initProCheckout } from "./js/components/ProCheckout.js";
 import { initComponentSearch } from "./js/components/Search.js";
 
 const page = document.body.dataset.page || "home";
@@ -29,6 +30,7 @@ root.innerHTML = renderShell({
 
 initComponentSearch();
 initBuildGuide();
+initProCheckout();
 
 
 
